@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- Bootswatch -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"
     integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+
   <title>Andrei Airinei | Portfolio</title>
 
   <!-- Main CSS File -->
@@ -26,23 +28,56 @@
       <span></span>
       <span></span>
       <span></span>
+      <span></span>
     </div>
 
     <!-- ====== Hero Section ====== -->
     <div id="hero">
-      <div class="container d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
         <div class="hero-body text-white mr-5">
-          <h1>Hi, I'm Andrei Airinei</h1>
-          <h1>An enthusiastic Web Developer</h1>
+          <h1>Hi, I'm Andrei</h1>
+          <h3 class="l-spacing-1 text-warning">&lt;WEB DEVELOPER /&gt;</h3>
           <div class="d-flex mt-5">
-            <a href="#" class="btn btn-success mr-3">PROJECTS</a>
-            <a href="#" class="btn btn-outline-secondary">RESUME</a>
+            <a href="#" class="btn btn-warning mr-3 font-weight-bold d-flex align-items-center">
+              <img src="./assets/send-button.svg" alt="right-arrow" class="icon-small mr-2 py-2">
+              PROJECTS
+            </a>
+            <a href="#" class="btn btn-outline-secondary font-weight-bold d-flex align-items-center">
+              <img src="./assets/download.svg" alt="right-arrow" class="icon-small mr-2 py-2">
+              RESUME
+            </a>
           </div>
         </div>
         <img src="./assets/hero_portfolio.png" class="animated" alt="Laptop">
       </div>
     </div>
   </header>
+
+  <div class="body">
+    <div class="container">
+      <!-- ====== Short Info ====== -->
+      <section id='small-info' class="d-flex align-items-center">
+        <div>
+          <img src="./assets/backend.png" alt="front end back end" class="animated mr-2">
+          <img src="./assets/frontend.png" alt="front end back end" class="animated mr-5">
+        </div>
+        <div>
+          <h3 class="font-weight-bold">Front End Focused</h3>
+          <h3>With Full Stack Experience</h3>
+        </div>
+
+      </section>
+
+      <section>
+
+      </section>
+    </div>
+  </div>
+
+
+
+
+
 
   <footer>
     Footer
@@ -56,6 +91,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+  <!-- Custom App Scripts -->
+  <script defer src="js/app.js"></script>
 </body>
 
 </html>
