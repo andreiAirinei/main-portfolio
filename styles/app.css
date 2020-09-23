@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ====== Animate on load ====== */
 .animated-page {
   -webkit-animation-duration: 0.7s;
@@ -46,12 +50,17 @@
   width: 14px;
 }
 
+.icon-medium {
+  width: 18px;
+}
+
 .l-spacing-1 {
   letter-spacing: 2px;
 }
 
 .text-underlay {
   position: relative;
+  z-index: 1;
 }
 
 .text-underlay::before {
@@ -71,7 +80,7 @@ a, button {
 
 p {
   line-height: 1.9rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 #header {
@@ -185,8 +194,7 @@ p {
 .body {
   position: relative;
   top: 500px;
-  height: 2000px;
-  overflow: hidden;
+  /* height: 2000px; */
 }
 
 .body::before {
@@ -196,22 +204,56 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 200%;
+  height: 50%;
   z-index: -2;
+  overflow: hidden;
   /* background-color: #f7f9fc; */
   background-color: #eef3f8;
   transform: skewY(-12deg);
+  overflow: hidden;
 }
 
-.body img {
-  max-width: 150px;
-}
-
+/* ====== Short Info ====== */
 #short-info {
   margin-bottom: 300px;
 }
 
+#short-info img {
+  max-width: 150px;
+}
+
+/* ====== Projects ====== */
+#projects {
+  margin-bottom: 100px;
+}
+
+/* #projects .project {
+  
+} */
+
+#projects .project .image-container {
+  height: 700px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#projects .project .image-container img {
+  cursor: pointer;
+  transition: transform 2.4s ease-in-out;
+}
+
+#projects .project .image-container:hover img {
+  transform: translateY(-64%);
+}
+
+/* ====== Skills ====== */
+#skills {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
 /* ====== FOOTER ====== */
+
 footer {
   position: relative;
   top: 500px;
