@@ -169,24 +169,24 @@ p {
 }
 
 #hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 1.8s ease-in-out infinite alternate-reverse both;
 }
 
 @-webkit-keyframes up-down {
   0% {
-    transform: translateY(10px);
+    transform: translateY(13px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-13px);
   }
 }
 
 @keyframes up-down {
   0% {
-    transform: translateY(10px);
+    transform: translateY(13px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-13px);
   }
 }
 
@@ -197,20 +197,25 @@ p {
   /* height: 2000px; */
 }
 
-.body::before {
+.body .background {
+  position: absolute;
+  height: 1400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.body .background::before {
   position: absolute;
   content: '';
   top: 300px;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 50%;
+  height: 300000%;
   z-index: -2;
-  overflow: hidden;
   /* background-color: #f7f9fc; */
   background-color: #eef3f8;
   transform: skewY(-12deg);
-  overflow: hidden;
 }
 
 /* ====== Short Info ====== */
