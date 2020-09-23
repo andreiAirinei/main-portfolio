@@ -50,6 +50,21 @@
   letter-spacing: 2px;
 }
 
+.text-underlay {
+  position: relative;
+}
+
+.text-underlay::before {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  left: -5px;
+  right: -5px;
+  height: 35%;
+  background-color: #30D5C8;
+  z-index: -1;
+}
+
 a, button {
   letter-spacing: 2px;
 }
@@ -61,14 +76,16 @@ p {
 
 #header {
   position: relative;
-  height: 1000px;
-  top: -400px;
+  /* height: 3000px; */
+  /* top: -2400px; */
 }
 
 #header .background {
   position: absolute;
+  overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 3000px;
+  top: -2300px;
   background: linear-gradient(130deg, #222222 15%, #373737 70%, #3c4859 94%);
   transform: skewY(12deg);
   z-index: -1;
@@ -107,10 +124,11 @@ p {
 }
 
 #header .background span:nth-child(4) {
-  width: 33.33%;
-  left: 0;
-  bottom: 0;
-  background: #2e2e2e;
+  width: 100%;
+  left: -70%;
+  bottom: -10px;
+  background: #2e2e2e9a;
+  transform: skewX(-100deg);
 }
 
 #header .background span:nth-child(5) {
@@ -133,7 +151,8 @@ p {
 /* ====== Hero ====== */
 #hero {
   position: relative;
-  top: 550px;
+  /* top: 2550px; */
+  top: 200px;
 }
 
 #hero img {
@@ -162,10 +181,12 @@ p {
   }
 }
 
+/* ====== Body & Sections Content ====== */
 .body {
   position: relative;
-  top: -300px;
-  height: 1000px;
+  top: 500px;
+  height: 2000px;
+  overflow: hidden;
 }
 
 .body::before {
@@ -175,6 +196,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
+  height: 200%;
   z-index: -2;
   /* background-color: #f7f9fc; */
   background-color: #eef3f8;
@@ -183,8 +205,18 @@ p {
 
 .body img {
   max-width: 150px;
-  /* border-radius: 50%; */
 }
 
+#short-info {
+  margin-bottom: 300px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  position: relative;
+  top: 500px;
+  background-color: #333;
+  height: 200px;
+}
 
 /* ====== MEDIA QUERIES ====== */
