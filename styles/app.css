@@ -74,14 +74,32 @@ html {
   z-index: -1;
 }
 
+.border-right {
+  border-right: 1px solid #d7d7d7;
+}
+
 a, button {
   letter-spacing: 2px;
 }
 
 p {
   line-height: 1.9rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
+
+#navigation-bar ul li a {
+  position: relative;
+  top: 30px;
+  color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#navigation-bar ul li a:hover {
+  color: #30D5C8
+} 
 
 #header {
   position: relative;
@@ -199,7 +217,7 @@ p {
 
 .body .background {
   position: absolute;
-  height: 1400px;
+  height: 2400px;
   width: 100%;
   overflow: hidden;
 }
@@ -232,12 +250,16 @@ p {
   margin-bottom: 100px;
 }
 
-/* #projects .project {
-  
-} */
+#projects .project {
+  margin-bottom: 100px;  
+  padding: 50px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  /* transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1); */
+}
 
 #projects .project .image-container {
-  height: 700px;
+  height: 500px;
   overflow: hidden;
   border-radius: 10px;
 }
