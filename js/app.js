@@ -12,8 +12,6 @@ const portfolioMonitor = document.querySelector('.portfolio-monitor');
 const portfolioTablet = document.querySelector('.portfolio-tablet');
 const portfolioMobile = document.querySelector('.portfolio-mobile');
 
-console.log(portfolioMonitor);
-
 // Event Functions
 const handleMainImage = e => {
   switch (e.target.dataset.name) {

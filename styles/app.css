@@ -300,8 +300,17 @@ p {
 
 /* ====== Skills ====== */
 #skills {
-  padding: 100px 0;
+  padding: 40px 0;
   background-color: #fff;
+}
+
+#skills .skill {
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+#skills .skill img {
+  width: 60px;
+  height: 60px;
 }
 
 /* ====== FOOTER ====== */
@@ -314,3 +323,9 @@ footer {
 }
 
 /* ====== MEDIA QUERIES ====== */
+
+@media only screen and (max-width: 576px) {
+  html {
+    zoom: 0.7;
+  }
+}
