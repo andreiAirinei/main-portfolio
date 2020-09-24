@@ -46,12 +46,32 @@ html {
 
 /* ====== Utility Classes ====== */
 
+.icon-xsmall {
+  width: 10px;
+}
+
 .icon-small {
   width: 14px;
 }
 
 .icon-medium {
   width: 18px;
+}
+
+.icon-xlarge {
+  width: 80px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon-xlarge:hover  {
+  background-color: rgba(48, 213, 199, 0.192);
+}
+
+.isActive {
+  border: 2px solid #30D5C8 !important;
 }
 
 .l-spacing-1 {
@@ -83,8 +103,8 @@ a, button {
 }
 
 p {
-  line-height: 1.9rem;
   font-size: 1rem;
+  margin-bottom: 0px;
 }
 
 #navigation-bar ul li a {
@@ -254,23 +274,28 @@ p {
   margin-bottom: 100px;  
   padding: 50px 10px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 2px;
   /* transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1); */
 }
 
 #projects .project .image-container {
-  height: 500px;
+  height: 570px;
   overflow: hidden;
   border-radius: 10px;
+  border: 1px solid #d7d7d7;
 }
 
 #projects .project .image-container img {
   cursor: pointer;
-  transition: transform 2.4s ease-in-out;
+  transition: transform 4s ease-in-out;
 }
 
-#projects .project .image-container:hover img {
-  transform: translateY(-64%);
+/* #projects .project .image-container:hover img {
+  transform: translateY(-70%);
+} */
+
+#projects .project .image-container:hover img{
+  transform: translateY(-70%);
 }
 
 /* ====== Skills ====== */

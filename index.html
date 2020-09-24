@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -84,12 +89,23 @@
       <!-- ====== Section Projects ====== -->
       <section id="projects">
         <h2 class="font-weight-bold mb-5"><span class="text-underlay">Projects</span></h2>
+
         <!-- ====== First Project ====== -->
         <div class="project shadow row">
           <div class="col-7 text-center border-right">
-            <div class="image-container mb-5">
-              <img src="./assets/tasty_recipes/long_capture1_resize.jpg" class="img-fluid rounded"
-                alt="Tasty Recipes Images Preview">
+            <div class="image-container mb-3 shadow">
+              <a href="https://www.andrei-airinei.com/" target="_blank">
+                <img src="./assets/tasty_recipes/monitor.jpg" class="recipe-main-image img-fluid rounded"
+                  alt="Tasty Recipes Images Preview">
+              </a>
+            </div>
+            <div class="project-preview d-flex mb-4 align-items-center justify-content-center">
+              <img src="./assets/responsive_monitor.svg" data-name='monitor'
+                class="recipe recipe-monitor icon-xlarge isActive" alt="Monitor Device">
+              <img src="./assets/responsive_tablet.svg" data-name='tablet' class="recipe recipe-tablet icon-xlarge mx-3"
+                alt="Tablet Device">
+              <img src="./assets/responsive_mobile.svg" data-name='mobile' class="recipe recipe-mobile icon-xlarge"
+                alt="Mobile Device">
             </div>
             <div class="d-flex justify-content-center">
               <div>
@@ -106,32 +122,131 @@
                 </a>
               </div>
             </div>
-
           </div>
 
           <div class="col-5">
-            <h3 class="font-weight-bold"># Tasty Recipes</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eligendi assumenda facilis hic repellat
-              eum iste maiores recusandae labore quidem modi aut! Esse nisi aperiam ex possimus itaque ea nobis officia,
-              fuga eaque quo animi rem veritatis cum in voluptatem consequatur, asperiores deserunt illo consequuntur
-              incidunt quis numquam alias necessitatibus laboriosam. Est, expedita? Iusto eius aliquam sunt culpa nulla
-              reprehenderit. Ea harum sed repellat inventore. Enim fuga voluptates, dignissimos tempore dolorem sed
-              impedit accusantium suscipit debitis cumque ab ipsum at exercitationem non iure? Saepe tempora, qui esse,
-              placeat quaerat dolores mollitia minima dignissimos quam, omnis numquam unde doloremque in. Distinctio
-              .</p>
+            <h3 class="font-weight-bold mb-4"># Tasty Recipes</h3>
+            <p class="mb-5 text-justify">Fully responsive app about food recipes and desserts from all around the world.
+              A place where you can find ideas for your daily meals and also where you can inspire others by creating
+              and
+              sharing
+              your own recipes.</p>
+            <h5 class="font-weight-bold mb-4">Technologies & Libraries Used</h5>
+            <div class="row mb-4">
+              <div class="col-6">
+                <h5><em>Front End:</em></h5>
+                <ul class="list-unstyled">
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>HTML5</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>CSS3 | SASS</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>Bootstrap</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>JavaScript</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>React</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>React Hooks</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>Redux | Thunk</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6">
+                <h5><em>Back End:</em></h5>
+                <ul class="list-unstyled">
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>Node.js</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>Express</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>MongoDB</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>REST API</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>TheMealDB API</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>ImgBB API</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>CRUD Functions</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <h5 class="font-weight-bold">Other Tools & Libraries</h5>
+            <ul class="list-unstyled">
+              <li class="d-flex">
+                <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                <p>NPM</p>
+              </li>
+              <li class="d-flex">
+                <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                <p>Axios</p>
+              </li>
+              <li class="d-flex">
+                <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                <p>JSON Web Token</p>
+              </li>
+              <li class="d-flex">
+                <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                <p>...plus many more</p>
+              </li>
+            </ul>
+
+            <p class="mt-4 font-weight-bold">App hosted on <a href="https://andrei-airinei.com" target="_blank"
+                class="text-info"><u>DigitalOcean</u></a></p>
           </div>
         </div>
 
         <!-- ====== Second Project ====== -->
         <div class="project shadow row">
           <div class="col-7 text-center border-right">
-            <div class="image-container mb-5">
-              <img src="./assets/tasty_recipes/long_capture1_resize.jpg" class="img-fluid rounded"
-                alt="Tasty Recipes Images Preview">
+            <div class="image-container mb-3 shadow">
+              <a href="https://aandrei.dev/">
+                <img src="./assets/tasty_recipes/portfolio_monitor.jpg" class="portfolio-main-image img-fluid rounded"
+                  alt="Portfolio Website Images Preview">
+              </a>
+            </div>
+            <div class="project-preview d-flex mb-4 align-items-center justify-content-center">
+              <img src="./assets/responsive_monitor.svg" data-name='portfolio-monitor'
+                class="portfolio portfolio-monitor icon-xlarge isActive" alt="Monitor Device">
+              <img src="./assets/responsive_tablet.svg" data-name='portfolio-tablet'
+                class="portfolio portfolio-tablet icon-xlarge mx-3" alt="Tablet Device">
+              <img src="./assets/responsive_mobile.svg" data-name='portfolio-mobile'
+                class="portfolio portfolio-mobile icon-xlarge" alt="Mobile Device">
             </div>
             <div class="d-flex justify-content-center">
               <div>
-                <a href="https://www.andrei-airinei.com/" target="_blank" class="btn btn-info d-flex mr-3">
+                <a href="https://aandrei.dev/" class="btn btn-info d-flex mr-3">
                   <img src="./assets/eye.svg" class="icon-medium mr-2" alt="eye">
                   Live Website
                 </a>
@@ -144,19 +259,53 @@
                 </a>
               </div>
             </div>
-
           </div>
 
           <div class="col-5">
-            <h3 class="font-weight-bold"># Tasty Recipes</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eligendi assumenda facilis hic repellat
-              eum iste maiores recusandae labore quidem modi aut! Esse nisi aperiam ex possimus itaque ea nobis officia,
-              fuga eaque quo animi rem veritatis cum in voluptatem consequatur, asperiores deserunt illo consequuntur
-              incidunt quis numquam alias necessitatibus laboriosam. Est, expedita? Iusto eius aliquam sunt culpa nulla
-              reprehenderit. Ea harum sed repellat inventore. Enim fuga voluptates, dignissimos tempore dolorem sed
-              impedit accusantium suscipit debitis cumque ab ipsum at exercitationem non iure? Saepe tempora, qui esse,
-              placeat quaerat dolores mollitia minima dignissimos quam, omnis numquam unde doloremque in. Distinctio
-              .</p>
+            <h3 class="font-weight-bold mb-4"># Portfolio Website</h3>
+            <p class="mb-5 text-justify">Fully responsive portfolio website.</p>
+            <h5 class="font-weight-bold mb-4">Technologies & Libraries Used</h5>
+            <div class="row mb-4">
+              <div class="col-6">
+                <h5><em>Front End:</em></h5>
+                <ul class="list-unstyled">
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>HTML5</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>CSS3</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>Bootstrap</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>Bootswatch</p>
+                  </li>
+                  <li class="d-flex">
+                    <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                    <p>JavaScript</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6">
+              </div>
+            </div>
+
+            <h5 class="font-weight-bold">Other Tools & Libraries</h5>
+            <ul class="list-unstyled">
+              <li class="d-flex">
+                <img src="./assets/right-arrow.svg" alt="bullet point" class="icon-xsmall mr-2">
+                <p>Visual Studio Code</p>
+              </li>
+            </ul>
+
+            <p class="mt-4 font-weight-bold">App hosted on <a href="https://aandrei.dev"
+                class="text-info"><u>Netlify</u></a></p>
           </div>
         </div>
       </section>
@@ -166,6 +315,7 @@
     <section id="skills">
       <div class="container">
         <h2 class="font-weight-bold"><span class="text-underlay">Skills</span></h2>
+        <h4 class="font-weight-bold">I have also tested the waters with:</h4>
       </div>
     </section>
   </div>
