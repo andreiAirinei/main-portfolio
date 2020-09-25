@@ -235,7 +235,7 @@ p {
 
 .body .background {
   position: absolute;
-  height: 2400px;
+  height: 2600px;
   width: 100%;
   overflow: hidden;
 }
@@ -308,6 +308,15 @@ p {
   transform: translateY(-70%);
 }
 
+/* ====== About ====== */
+#about {
+  padding-top: 100px; 
+}
+
+#about h5 {
+  line-height: 2rem;
+}
+
 /* ====== Skills ====== */
 #skills {
   padding: 40px 0;
@@ -361,7 +370,7 @@ footer {
   .body { top: 600px;}
 
   .body .background {
-    height: 3550px;
+    height: 3700px;
   }
 
   #projects .project .image-container:hover img{
@@ -415,4 +424,6 @@ footer {
   .body .background {
     height: 3000px;
   }
+
+  #about { padding-top: 30px;}
 }
