@@ -123,8 +123,6 @@ p {
 
 #header {
   position: relative;
-  /* height: 3000px; */
-  /* top: -2400px; */
 }
 
 #header .background {
@@ -322,10 +320,63 @@ footer {
   height: 200px;
 }
 
+
+
+
 /* ====== MEDIA QUERIES ====== */
+
+@media only screen and (max-width: 992px) {
+  #hero img {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #short-info img {
+    max-width: 100px;
+  }
+
+  .body { top: 600px;}
+}
+
+@media only screen and (max-width: 769px) {
+  html {
+    zoom: 90%;
+  }
+
+  .body { 
+    top: 350px;
+  }
+
+  #short-info h3 {
+    font-size: 1.7rem;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   html {
-    zoom: 0.7;
+    zoom: 80%;
+  }
+
+  #hero img {
+    max-width: 300px;
+  }
+
+  .body { 
+    top: 350px;
+  }
+
+  #short-info h3 {
+    font-size: 1.5rem;
   }
 }
