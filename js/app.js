@@ -23,7 +23,6 @@ const handleDeviceClick = e => {
       recipeTablet.classList.remove('isActive');
       recipeMobile.classList.remove('isActive');
       recipeMainImage.src = './assets/tasty_recipes/monitor.jpg';
-      recipeQuickPeek();
       break;
 
     case 'tablet':
@@ -31,7 +30,6 @@ const handleDeviceClick = e => {
       recipeTablet.classList.add('isActive');
       recipeMobile.classList.remove('isActive');
       recipeMainImage.src = './assets/tasty_recipes/tablet.jpg';
-      recipeQuickPeek();
       break;
 
     case 'mobile':
@@ -39,7 +37,6 @@ const handleDeviceClick = e => {
       recipeTablet.classList.remove('isActive');
       recipeMobile.classList.add('isActive');
       recipeMainImage.src = './assets/tasty_recipes/mobile.jpg';
-      recipeQuickPeek();
       break;
 
     case 'portfolio-monitor':
@@ -47,7 +44,6 @@ const handleDeviceClick = e => {
       portfolioTablet.classList.remove('isActive');
       portfolioMobile.classList.remove('isActive');
       portfolioMainImage.src = './assets/tasty_recipes/portfolio_monitor.jpg';
-      portfolioQuickPeek();
       break;
 
     case 'portfolio-tablet':
@@ -55,7 +51,6 @@ const handleDeviceClick = e => {
       portfolioTablet.classList.add('isActive');
       portfolioMobile.classList.remove('isActive');
       portfolioMainImage.src = './assets/tasty_recipes/portfolio_tablet.jpg';
-      portfolioQuickPeek();
       break;
 
     case 'portfolio-mobile':
@@ -63,7 +58,6 @@ const handleDeviceClick = e => {
       portfolioTablet.classList.remove('isActive');
       portfolioMobile.classList.add('isActive');
       portfolioMainImage.src = './assets/tasty_recipes/portfolio_mobile.jpg';
-      portfolioQuickPeek();
       break;
 
     default:
@@ -78,25 +72,3 @@ recipeMobile.addEventListener('click', handleDeviceClick);
 portfolioMonitor.addEventListener('click', handleDeviceClick);
 portfolioTablet.addEventListener('click', handleDeviceClick);
 portfolioMobile.addEventListener('click', handleDeviceClick);
-
-
-// ### Functions
-
-// Manipulate main image scrolling
-const recipeQuickPeek = () => {
-  recipeMainImage.classList.add('translateImage-70');
-
-  setTimeout(() => {
-    recipeMainImage.classList.remove('translateImage-70');
-  }, 3500);
-}
-
-const portfolioQuickPeek = () => {
-  portfolioMainImage.classList.add('translateImage-70');
-
-  setTimeout(() => {
-    recipeMainImage.classList.remove('translateImage-70');
-  }, 3500);
-}
-
-
