@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* ====== Animate on load ====== */
 .animated-page {
   -webkit-animation-duration: 0.7s;
@@ -319,12 +323,26 @@ p {
 
 /* ====== FOOTER ====== */
 
-footer {
+#footer {
   position: relative;
+  background-image: url('/assets/bottom-3200.svg');
+  background-position: top center;
+  background-repeat: repeat-x;
   top: 500px;
-  background-color: #333;
-  height: 200px;
+  background-color: #e8e8e8;
+  height: 1000px;
 }
+
+/* #footer::before {
+  position: absolute;
+  content: '';
+  background: red;
+  top: 0;
+  left: -2000px;
+  right: -2000px;
+  height: 500px;
+  transform: rotate(12deg);
+} */
 
 
 
