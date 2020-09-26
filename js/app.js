@@ -88,7 +88,7 @@ topBtn.addEventListener('click', goTop);
 window.onscroll = () => handleWindowScroll();
 
 const handleWindowScroll = () => {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     topBtn.style.display = "block";
   } else {
     topBtn.style.display = "none";
