@@ -72,3 +72,25 @@ recipeMobile.addEventListener('click', handleDeviceClick);
 portfolioMonitor.addEventListener('click', handleDeviceClick);
 portfolioTablet.addEventListener('click', handleDeviceClick);
 portfolioMobile.addEventListener('click', handleDeviceClick);
+
+
+
+// ################# Go Top Button Functionality ###########
+const topBtn = document.querySelector('#topBtn');
+
+const goTop = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+topBtn.addEventListener('click', goTop);
+
+window.onscroll = () => handleWindowScroll();
+
+const handleWindowScroll = () => {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}

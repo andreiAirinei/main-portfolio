@@ -325,6 +325,18 @@ p {
   height: 60px;
 }
 
+/* ====== GO TOP BUTTON ====== */
+#topBtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 100px;
+  outline: none !important;
+  border: none !important;
+  border-radius: 50%;
+}
+
 /* ====== FOOTER ====== */
 
 #footer {
@@ -335,7 +347,7 @@ p {
   top: 350px;
   background-color: #e8e8e8;
   background-color: #3c4959;
-  height: 860px;
+  height: 900px;
   z-index: -1;
 }
 
@@ -385,6 +397,13 @@ p {
 
   #projects .project .image-container:hover img{
     transform: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #topBtn {
+    right: 20px;
+    bottom: 20px;
   }
 }
 
