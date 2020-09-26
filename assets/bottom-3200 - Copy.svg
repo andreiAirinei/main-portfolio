@@ -42,8 +42,8 @@
      id="namedview18"
      showgrid="false"
      inkscape:zoom="0.50204581"
-     inkscape:cx="1787.5571"
-     inkscape:cy="277.7447"
+     inkscape:cx="1462.6661"
+     inkscape:cy="-282.76148"
      inkscape:window-x="-8"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -59,33 +59,29 @@
     ]]></style>
   <!-- Backgrounds -->
   <polygon
-     points="3200,0 0,0 0,50 1600,410 3200,50 "
+     points="1600,410 3200,50 3200,0 0,0 0,50 "
      class="one"
      id="polygon4"
-     transform="matrix(1,0,0,0.63028205,0,-29.877752)"
-     style="fill:#eef3f8;fill-opacity:1" />
+     transform="scale(1,0.87804878)"
+     style="fill:#f8f8f8" />
   <polygon
-     points="3200,0 3200,0 0,0 1600,360 "
+     points="0,0 1600,360 3200,0 3200,0 0,0"
      class="two"
-     id="polygon6"
-     transform="scale(1,0.47990581)"
-     style="fill:#ffffff" />
+     id="polygon6" />
   <!-- Lower lines -->
   <line
      x1="0"
      y1="0"
      x2="1600"
-     y2="228.53789"
+     y2="360"
      class="upper"
-     id="line8"
-     style="stroke-width:0.79676062px" />
+     id="line8" />
   <line
      x1="1600"
-     y1="228.53789"
+     y1="360"
      x2="3200"
      y2="0"
      class="upper"
-     id="line10"
-     style="stroke-width:0.79676062px" />
+     id="line10" />
   <!-- Upper Lines -->
 </svg>
