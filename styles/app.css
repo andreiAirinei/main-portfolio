@@ -367,6 +367,10 @@ p {
   line-height: 1.8rem;
 }
 
+#footer .social a {
+  margin: 0 5px;
+}
+
 /* ====== MEDIA QUERIES ====== */
 
 @media only screen and (max-width: 992px) {
