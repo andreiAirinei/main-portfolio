@@ -428,6 +428,8 @@ p {
   #short-info h3 {
     font-size: 1.7rem;
   }
+
+  #footer { top: 200px;}
 }
 
 @media only screen and (max-width: 576px) {
