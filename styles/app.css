@@ -126,8 +126,26 @@ p {
 }
 
 #navigation-bar ul li a:hover {
-  color: #30D5C8
+  color: #30D5C8;
 } 
+
+#navigation-bar ul li a:hover .arrow::before {
+  background-color: #30D5C8;
+} 
+
+#navigation-bar ul li a .arrow {
+  position: relative;
+}
+
+#navigation-bar ul li a .arrow::before {
+  position: absolute;
+  content: '';
+  bottom: 4px;
+  left: 0;
+  right: 2px;
+  height: 1px;
+  background-color: #fff;
+}
 
 #header {
   position: relative;
