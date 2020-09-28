@@ -483,10 +483,10 @@ p {
 
 
 /* Bootstrap Overrides */
-/* .row::before,
+.row::before,
 .row::after {
   display: inline-block !important;
-} */
+}
 
 .flex-row{
 display: flex;
