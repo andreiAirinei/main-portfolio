@@ -48,13 +48,6 @@ body {
 	animation-name: fadeIn;
 }
 
-.btn-warning {
-  background-color: #F39C12;
-  outline-color: #F39C12;
-  border-color: #F39C12;
-  color: #fff !important;
-}
-
 /* ====== Utility Classes ====== */
 
 .icon-xsmall {
@@ -113,9 +106,20 @@ body {
   border-right: 1px solid #d7d7d7;
 }
 
-.text-main {
+/* Colors */
+.text-color-1 {
   color: #F39C12;
 }
+
+
+.btn-warning {
+  background-color: #F39C12;
+  outline-color: #F39C12;
+  border-color: #F39C12;
+  color: #fff !important;
+}
+
+.btn-
 
 a, button {
   letter-spacing: 2px;
