@@ -471,7 +471,19 @@ p {
 
 
 /* Bootstrap Overrides */
-.row::before,
+/* .row::before,
 .row::after {
   display: inline-block !important;
+} */
+
+.flex-row{
+  display: flex;
+ display: -webkit-flex; 
+ flex-wrap:wrap;
+ -webkit-flex-wrap: wrap;
+ -webkit-justify-content: center;
+         justify-content: center;
+}
+.flex-row:before, .flex-row:after{
+display: none;
 }
