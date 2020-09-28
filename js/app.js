@@ -43,21 +43,21 @@ const handleDeviceClick = e => {
       portfolioMonitor.classList.add('isActive');
       portfolioTablet.classList.remove('isActive');
       portfolioMobile.classList.remove('isActive');
-      portfolioMainImage.src = './assets/portfolio/monitor_portfolio.webp';
+      portfolioMainImage.src = './assets/portfolio/monitor_portfolio.jpeg';
       break;
 
     case 'portfolio-tablet':
       portfolioMonitor.classList.remove('isActive');
       portfolioTablet.classList.add('isActive');
       portfolioMobile.classList.remove('isActive');
-      portfolioMainImage.src = './assets/portfolio/tablet_portfolio.webp';
+      portfolioMainImage.src = './assets/portfolio/tablet_portfolio.jpeg';
       break;
 
     case 'portfolio-mobile':
       portfolioMonitor.classList.remove('isActive');
       portfolioTablet.classList.remove('isActive');
       portfolioMobile.classList.add('isActive');
-      portfolioMainImage.src = './assets/portfolio/mobile_portfolio.webp';
+      portfolioMainImage.src = './assets/portfolio/mobile_portfolio.jpeg';
       break;
 
     default:
