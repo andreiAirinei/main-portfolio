@@ -424,7 +424,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   html {
     zoom: 90%;
   }
